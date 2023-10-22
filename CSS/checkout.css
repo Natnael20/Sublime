@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#info-row {
+    display: flex;
+    align-items: center;
+}
+
+.registration-form form  {
+   display: grid;
+   row-gap: 10px;
+}
+
+#second-col {
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+
+.overall-details, .over-details-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.paypal, .cash, .credit, .direct-bank {
+    display:flex;
+    gap:10px;
+}
+
+@media screen and (max-width:700px) {
+    #info-row {
+        display: block;
+    }
+}

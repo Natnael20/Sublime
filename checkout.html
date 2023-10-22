@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/cff48999ee.js" crossorigin="anonymous"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="<KEY>" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="<KEY>" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="<KEY>"
+        crossorigin="anonymous"></script>
+    <!--w3-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/cart.css">
+    <link rel="stylesheet" href="CSS/checkout.css">
+</head>
+
+<body>
+    <div class="container-fluid  bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-dark justify-content-between">
+                <a class="navbar-brand overflow-auto mt-4" href="home.html"><span
+                        class="text-uppercase logo">Sublime</span></a>
+                <div class="right-contents mt-4">
+                    <form class="search">
+                        <input type="text" placeholder="Search" class="searchinput">
+                        <button type="button" class="searchbutton">
+                            <i class="fa-solid fa-magnifying-glass w3-hover-text-red"></i>
+                        </button>
+                    </form>
+                    <div class="cart w3-hover-text-red">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="cart.html"
+                            class="w3-hover-text-red text-decoration-none text-capitalize">Cart</i>
+                        </a>
+                    </div>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="home.html">Home</a>
+                            <a href="categories.html">Categories</a>
+                            <a href="product.html">Product</a>
+                            <a href="cart.html">Cart</a>
+                            <a href="checkout.html">Checkout</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                    <span onclick="openNav()">&#9776;</span>
+                    <script src="/script.js/navbar.js"></script>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="intro-background-img">
+            <!--img-->
+            <div class="container">
+                <div class="links text-light">
+                    <a href="home.html" class="w3-hover-text-red text-decoration-none">Home</a>
+                    <span>/</span>
+                    <a href="categories.html" class="w3-hover-text-red text-decoration-none">Categories</a>
+                    <span>/</span>
+                    <a href="#" class="btn disabled w3-text-red text-capitalize">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5" id="info-row">
+            <div class="col mt-5">
+                <div class="registration-form">
+                    <h3>Billing Address</h3>
+                    <p class="w3-opacity">Enter your address info</p>
+                    <form action="/hello">
+                        <label for="first-name">First Name*</label>
+                        <input type="text" id="first-name" class="form-control" name="first-name" required>
+
+                        <label for="last-name">Last Name*</label>
+                        <input type="text" id="last-name" class="form-control" name="last-name" required>
+
+                        <label for="company">Company</label>
+                        <input type="text" id="company" class="form-control" name="company">
+
+                        <label for="country">Country*</label>
+                        <input type="text" id="country" class="form-control" name="country" required>
+
+                        <label for="address">Address*</label>
+                        <input type="text" id="address" class="form-control" name="address" required>
+
+                        <label for="zipcode">Zipcode*</label>
+                        <input type="text" id="zipcode" class="form-control" name="zipcode" required>
+
+                        <label for="city-town">City/Town*</label>
+                        <input type="text" id="city-town" class="form-control" name="city-town" required>
+
+                        <label for="province">Province</label>
+                        <input type="text" id="province" class="form-control" name="province">
+
+                        <label for="phone-no">Phone no*</label>
+                        <input type="tel" id="phone-no" class="form-control" name="phone-no" required>
+
+                        <label for="email-address">Email Address*</label>
+                        <input type="email" id="email-address" class="form-control" name="email-address" required>
+
+                        <button type="submit" class="btn w-100 w3-border-black p-3">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col mt-5" id="second-col">
+                <h3>Your Order</h3>
+                <p class="w3-opacity">Order detials</p>
+                <div class="overall-details">
+                    <div class="product">
+                        <p>Product</p>
+                    </div>
+                    <div class="total">
+                        <p>Total</p>
+                    </div>
+                </div>
+                <div class="over-details-contents">
+                    <div class="product-content">
+                        <p>CockTails</p>
+                        <p>Subtotal</p>
+                        <p>Shipping</p>
+                        <p>Total</p>
+                    </div>
+                    <div class="price-content">
+                        <p>$59.00</p>
+                        <p>$59.00</p>
+                        <p>Free</p>
+                        <p>$59.00</p>
+                    </div>
+                </div>
+                <div class="payment-method mt-4">
+                    <div class="paypal">
+                        <input type="radio" name="radio" id="radio">
+                        <p class="mt-3">Paypal</p>
+                    </div>
+                    <div class="cash">
+                        <input type="radio" name="radio" id="radio">
+                        <p class="mt-3">Cash</p>
+                    </div>
+                    <div class="credit">
+                        <input type="radio" name="radio" id="radio">
+                        <p class="mt-3">Credit</p>
+                    </div>
+                    <div class="direct-bank">
+                        <input type="radio" name="radio" id="radio">
+                        <p class="mt-3">Bank-transfer</p>
+                    </div>
+                </div>
+                <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra temp or so dales. Phasellus
+                    sagittis auctor gravida. Integ er bibendum sodales arcu id te mpus. Ut consectetur lacus.</p>
+                <button class="btn w3-border-black w3-text-black mt-5 w-100 p-4">Place order</button>
+            </div>
+        </div>
+    </div>
+    <div class="contanier-fluid" id="footer">
+        <footer>
+            <div class="container">
+                <div class="information">
+                    <div class="information-content">
+                        <div class="footer-logo">
+                            <p>Sublime</p>
+                        </div>
+                        <div class="copyright">
+                            <p>Copyright ©2023 All rights reserved</p>
+                        </div>
+                        <div class="icons">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

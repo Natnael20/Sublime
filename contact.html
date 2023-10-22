@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/cff48999ee.js" crossorigin="anonymous"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="<KEY>" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="<KEY>" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="<KEY>"
+        crossorigin="anonymous"></script>
+    <!--w3-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/contact.css">
+</head>
+<body>
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light border-dark justify-content-between">
+                <a class="navbar-brand overflow-auto mt-4" href="home.html"><span
+                        class="text-uppercase logo">Sublime</span></a>
+                <div class="right-contents mt-4">
+                    <form class="search">
+                        <input type="text" placeholder="Search" class="searchinput">
+                        <button type="button" class="searchbutton">
+                            <i class="fa-solid fa-magnifying-glass w3-hover-text-red"></i>
+                        </button>
+                    </form>
+                    <div class="cart w3-hover-text-red">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="cart.html"
+                            class="w3-hover-text-red text-decoration-none text-capitalize">Cart</i>
+                        </a>
+                    </div>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="home.html">Home</a>
+                            <a href="categories.html">Categories</a>
+                            <a href="product.html">Product</a>
+                            <a href="cart.html">Cart</a>
+                            <a href="checkout.html">Checkout</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                    <span class="line" onclick="openNav()">&#9776;</span>
+                    <script src="/script.js/navbar.js"></script>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container w3-animate-bottom">
+        <div class="background-img">
+            <!--img-->
+            <div class="links ml-3">
+                <a href="home.html" class="text-decoration-none w3-hover-text-red">Home</a>
+                <span class="text-light">/</span>
+                <a href="#" class="btn disabled text-decoration-none text-danger">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="container w3-animate-bottom">
+        <div class="row" id="row">
+            <div class="col-md-9 mt-5">
+                <form action="">
+                    <h3 class="font-weight-bolder">Get in Touch
+                    </h3>
+                    <p class="w3-opacity">Say hello</p>
+                    <div class="name w-100">
+                        <div class="form-group w-100">
+                            <label for="first-name">First Name</label>
+                            <input type="text" class="form-control" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group w-100">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" class="form-control" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                
+                    <button type="submit" class="btn text-light bg-dark p-3 w-50"><a href="mailto:yourmail@gmail.com" class="text-decoration-none text-light">Send Message</a></button>
+                </form>
+            </div>
+            <div class="col-md-3 w3-animate-bottom">
+                <div class="right-container">
+                    <div class="contents">
+                        <div class="markets">   
+                            <h3 class="font-weight-bold">Marketing</h3>
+                            <a href="tel:+53 345 7953 3245">Phone: +53 345 7953 3245
+                            </a><br>
+                            <a href="mailto:yourmail@gmail.com">Email: yourmail@gmail.com
+                            </a>
+                        </div>
+                        <div class="ship-return mt-5">
+                            <h3 class="font-weight-bold" >Shipping & Returns
+                            </h3>
+                            <a href="tel:+53 345 7953 3245">Phone: +53 345 7953 3245
+                            </a><br>
+                            <a href="mailto:yourmail@gmail.com">Email: yourmail@gmail.com
+                            </a>
+                        </div>
+                        <div class="info mt-5">
+                            <h3 class="font-weight-bold">Information
+                            </h3>
+                            <a href="tel:+53 345 7953 3245">Phone: +53 345 7953 3245
+                            </a><br>
+                            <a href="mailto:yourmail@gmail.com">Email: yourmail@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 w3-animate-bottom">
+        <div class="center">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387239.74771779357!2d-74.20902059960937!3d40.689158152629616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sse!4v1698010459531!5m2!1sen!2sse" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="contanier-fluid" id="footer">
+        <footer>
+            <div class="container">
+                <div class="information">
+                    <div class="information-content">
+                        <div class="footer-logo">
+                            <p>Sublime</p>
+                        </div>
+                        <div class="copyright">
+                            <p>Copyright ©2023 All rights reserved</p>
+                        </div>
+                        <div class="icons">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

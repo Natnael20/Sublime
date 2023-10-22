@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/cff48999ee.js" crossorigin="anonymous"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="<KEY>" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="<KEY>" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="<KEY>"
+        crossorigin="anonymous"></script>
+    <!--w3-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/product.css">
+</head>
+
+<body>
+    <div class="container-fluid  bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-dark justify-content-between">
+                <a class="navbar-brand overflow-auto" href="home.html"><span
+                        class="text-uppercase logo">Sublime</span></a>
+                <div class="right-contents">
+                    <form class="search">
+                        <input type="text" placeholder="Search" class="searchinput">
+                        <button type="button" class="searchbutton">
+                            <i class="fa-solid fa-magnifying-glass w3-hover-text-red"></i>
+                        </button>
+                    </form>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="cart.html"
+                            class="w3-text-black w3-hover-text-red text-decoration-none text-capitalize">Cart</a>
+                    </div>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="home.html">Home</a>
+                            <a href="categories.html">Categories</a>
+                            <a href="product.html">Product</a>
+                            <a href="cart.html">Cart</a>
+                            <a href="checkout.html">Checkout</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                    <span onclick="openNav()">&#9776;</span>
+                    <script src="/script.js/navbar.js"></script>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="intro mt-5">
+            <section class="text-light w-50 ml-3 text-break">
+                <span class="overflow-auto">Smart Phones<span class="text-danger">.</span></span>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nullam a ultricies metus.
+                    Sed nec molestie eros.
+                    Sed viverra velit venenatis fermentum luctus.</p>
+            </section>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="container mt-5">
+                    <img id="expandedImg" class="w-100">
+                    <div id="imgtext"></div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="column">
+                            <img src="https://preview.colorlib.com/theme/sublime/images/details_1.jpg.webp" alt="pic1"
+                                 class="w-100" onclick="myFunction(this);">
+                        </div>
+                        <div class="column">
+                            <img src="https://preview.colorlib.com/theme/sublime/images/details_2.jpg.webp" alt="pic2"
+                                 class="w-100" onclick="myFunction(this);">
+                        </div>
+                        <div class="column">
+                            <img src="https://preview.colorlib.com/theme/sublime/images/details_3.jpg.webp" alt="pic3"
+                                 class="w-100" onclick="myFunction(this);">
+                        </div>
+                        <div class="column">
+                            <img src="https://preview.colorlib.com/theme/sublime/images/details_4.jpg.webp" alt="pic4"
+                                class="w-100" onclick="myFunction(this);">
+                        </div>
+                    </div>
+                </div>
+                <script src="/script.js/tapGallery.js"></script>
+            </div>
+            <div class="col mt-5">
+                <h3>Smart Phone</h3>
+                <div class="prices">
+                    <h5 class="w3-text-red">$890</h5>
+                    <h5>$670</h5>
+                </div>
+                <div class="stock mt-3">
+                    <p>Available:</p>
+                    <p>In stock</p>
+                </div>
+                <p class="mt-sm-5 mt-5 w3-opacity">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. Phasellus id nisi quis justo tempus mollis
+                    sed et dui. In hac habitasse platea dictumst. Suspendisse ultrices mauris diam. Nullam sed aliquet
+                    elit. Mauris consequat nisi ut mauris efficitur lacinia.
+                </p>
+                <div class="quantity">
+                    <input type="number" id="number" name="number" class="p-3 w-25 text-dark">
+                    <button class="btn w3-black text-light p-3">Add to Caart</button>
+                </div>
+                <div class="share mt-5">
+                    <div class="share-para">
+                        <p class="w3-opacity">Share</p>
+                    </div>
+                    <div class="social">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="links">
+            <a href="#" class="active w3-text-black text-decoration-none"><h2>Description</h2></a>
+            <h2>Reviews (1)</h2>
+        </div>
+        <p class="mt-5 w3-opacity">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. Phasellus id nisi quis justo tempus mollis sed et dui. In hac
+            habitasse platea dictumst. Suspendisse ultrices mauris diam. Nullam sed aliquet elit. Mauris consequat nisi
+            ut mauris efficitur lacinia.
+        </p>
+    </div>
+    <div class="container mt-5">
+        <h1 class="text-sm-center text-md-center font-weight-bold">Related Products</h1>
+        <div class="row items-rwo mt-5">
+            <div class="col-md-3 col-sm-6 product">
+                <img src="/Images/product1.png" alt="product1" class="img-fluid">
+                <h5 class="w3-hover-text-red">Smart Phone</h5>
+                <p>$70</p>
+            </div>
+            <div class="col-md-3 col-sm-6 product">
+                <img src="/Images/product2.png" alt="product2" class="img-fluid">
+                <h5 class="w3-hover-text-red">Smart headphone</h5>
+                <p>$150</p>
+            </div>
+            <div class="col-md-3 col-sm-6 product">
+                <img src="https://preview.colorlib.com/theme/sublime/images/product_11.jpg.webp" alt="product3"
+                class="img-fluid">
+                <h5 class="w3-hover-text-red">Play Station 5</h5>
+                <p>$500</p>
+            </div>
+            <div class="col-md-3 col-sm-6 product">
+                <img src="https://preview.colorlib.com/theme/sublime/images/product_6.jpg.webp" alt="product4"
+                class="img-fluid">
+                <h5 class="w3-hover-text-red">Phone</h5>
+            <p>$100</p>
+            </div>
+        </div>
+    </div>
+    <div class="container subscription">
+        <div class="sub">
+           <div class="news">
+                <h3>Subscribe to our newsletter
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros
+                </p>
+           </div>
+           <div class="button">
+                <button class="btn bg-dark text-light mt-5 p-3">Subscribe</button>
+           </div>
+        </div>
+    </div>
+    <div class="contanier-fluid" id="footer">
+        <footer>
+            <div class="container">
+                <div class="information">
+                    <div class="information-content">
+                        <div class="footer-logo">
+                            <p>Sublime</p>
+                        </div>
+                        <div class="copyright">
+                            <p>Copyright ©2023 All rights reserved</p>
+                        </div>
+                        <div class="icons">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

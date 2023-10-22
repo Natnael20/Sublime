@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro-background-img {
+    background-image: url("https://preview.colorlib.com/theme/sublime/images/cart.jpg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    overflow: auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #898989;
+}
+
+.product-details {
+    display: flex;
+    gap: 100px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.product1 {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.product1-details {
+    display: flex;
+    gap: 74px;
+    align-items: center;
+}
+
+@media screen and (max-width:700px) {
+    .info {
+        display:none;
+    }
+
+    main {
+        width:100%;
+        display: block;
+        overflow: auto;
+    }
+
+    .product1-details {
+        display: block;
+        line-height: 3;
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
+
+.inside-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.update-products {
+    display: flex;
+    gap:40px;
+    overflow: auto;
+}
+
+@media screen and (max-width:600px) {
+    .inside-buttons {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .update-products {
+        margin-top: 5%;
+    }
+}
+
+#shipping-method {
+    margin-top: 5%;
+}
+
+#shipping-row {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option .form{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+@media screen and (max-width:300px) {
+    .option {
+        display: block;
+        text-align: center;
+    }
+}
+
+.code-input {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.code-input input {
+    width: 50%;
+}
+
+@media screen and (max-width:600px) {
+    .code-input {
+        display: block;
+        width: auto;
+    }
+
+    .code-input input {
+        width: 100%;
+    }
+}
+
+#second-col > button {
+    border: 2px solid black;
+}
+
+.cart-total-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 300px) {
+    .cart-total-info {
+        display: block;
+        text-align: center;
+    }
+}
+
+button {
+    background-color: white;
+}

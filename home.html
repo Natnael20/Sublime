@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/cff48999ee.js" crossorigin="anonymous"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="<KEY>" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="<KEY>" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="<KEY>"
+        crossorigin="anonymous"></script>
+    <!--w3-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <div class="container-fluid w3-animate-zoom bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light border-dark justify-content-between">
+                <a class="navbar-brand overflow-auto mt-4" href="home.html"><span
+                        class="text-uppercase logo">Sublime</span></a>
+                <div class="right-contents mt-4">
+                    <form class="search">
+                        <input type="text" placeholder="Search" class="searchinput">
+                        <button type="button" class="searchbutton">
+                            <i class="fa-solid fa-magnifying-glass w3-hover-text-red"></i>
+                        </button>
+                    </form>
+                    <div class="cart w3-hover-text-red">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="cart.html"
+                            class="w3-hover-text-red text-decoration-none text-capitalize">Cart</i>
+                        </a>
+                    </div>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="home.html">Home</a>
+                            <a href="categories.html">Categories</a>
+                            <a href="product.html">Product</a>
+                            <a href="cart.html">Cart</a>
+                            <a href="checkout.html">Checkout</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                    <span class="line" onclick="openNav()">&#9776;</span>
+                    <script src="/script.js/navbar.js"></script>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid mt-5" id="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <div class="inner-slide w-50">
+                    <h1>A new online shop experience</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec
+                        molestie.
+                    </p>
+                    <button class="btn p-3 w-25 text-light border-light">Shop Now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="inner-slide w-50">
+                    <h1>A new online shop experience</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec
+                        molestie.
+                    </p>
+                    <button class="btn p-3 w-25 text-light border-light">Shop Now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="inner-slide w-50">
+                    <h1>A new online shop experience</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec
+                        molestie.
+                    </p>
+                    <button class="btn p-3 w-25 text-light border-light">Shop Now</button>
+                </div>
+            </div>
+        </div>
+        <script src="/script.js/slider.js"></script>
+    </div>
+    <div class="container w3-animate-right">
+        <div class="row mt-3 w-100" id="second-row">
+            <div class="col-md-4 col-sm-4 col-lg-5" id="phone-col">
+                <div class="phone">
+                    <p>Smart Phones</p>
+                </div>
+            </div>
+            <div class="col" id="camera-col">
+                <div class="camera w-75 text-light">
+                    <h1>Professional Cameras</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec
+                        molestie eros. Sed viver ra velit venenatis fermentum luctus.</p>
+                    <a href="#" class="text-light">See More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 w3-animate-left">
+        <div class="row items-rwo">
+            <div class="col-md-3 col-sm-6 product">
+                <img src="/Images/product1.png" alt="product1" class="img-fluid">
+                <h5 class="w3-hover-text-red">Smart Phone</h5>
+                <p>$70</p>
+            </div>
+            <div class="col-md-3 col-sm-6 product">
+                <img src="/Images/product2.png" alt="product2" class="img-fluid">
+                <h5 class="w3-hover-text-red">Smart headphone</h5>
+                <p>$150</p>
+            </div>
+            <div class="col-md-3 col-sm-6 product">
+                <img src="https://preview.colorlib.com/theme/sublime/images/product_11.jpg.webp" alt="product3"
+                class="img-fluid">
+                <h5 class="w3-hover-text-red">Play Station 5</h5>
+                <p>$500</p>
+            </div>
+            <div class="col-md-3 col-sm-6 product">
+                <img src="https://preview.colorlib.com/theme/sublime/images/product_6.jpg.webp" alt="product4"
+                class="img-fluid">
+                <h5 class="w3-hover-text-red">Phone</h5>
+            <p>$100</p>
+            </div>
+        </div>
+        <div class="row mt-md-5">
+            <div class="col-md-3 col-sm-6">
+                <div class="product5-img">
+                    <img src="https://preview.colorlib.com/theme/sublime/images/product_4.jpg.webp" alt="product5"
+                        class="img-fluid">
+                </div>
+                <h5 class="w3-hover-text-red">Computer</h5>
+                <p>$200</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product6-img">
+                    <img src="https://preview.colorlib.com/theme/sublime/images/product_10.jpg.webp" alt="product6"
+                        class="img-fluid">
+                </div>
+                <h5 class="w3-hover-text-red">Smart headphone</h5>
+                <p>$100</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product7-img">
+                    <img src="https://preview.colorlib.com/theme/sublime/images/product_9.jpg.webp" alt="product6"
+                        class="img-fluid">
+                </div>
+                <h5 class="w3-hover-text-red">Smart</h5>
+                <p>$400</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product8-img">
+                    <img src="https://preview.colorlib.com/theme/sublime/images/product_8.jpg.webp" alt="product8"
+                        class="img-fluid">
+                </div>
+                <h5 class="w3-hover-text-red">Keyboard</h5>
+                <p>$400</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 w3-animate-right">
+        <div class="head">
+            <div class="inside-head w3-red">
+                <h1 class="font-weight-bold">Amazing Devices</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus.</p>
+                <a href="#">See More</a>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 w3-animate-left">
+        <div class="row service text-center">
+            <div class="col-md-4">
+                <img src="https://preview.colorlib.com/theme/sublime/images/icon_1.svg" alt="pic1" class="img-fluid w-25">
+                <h6>Free Shipping Worldwide
+                </h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://preview.colorlib.com/theme/sublime/images/icon_2.svg" alt="pic2" 
+                class="img-fluid w-25">
+                <h6>Free Returns
+                </h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://preview.colorlib.com/theme/sublime/images/icon_3.svg" alt="pic3"
+                    class="img-fluid w-25">
+                <h5>24h Fast Support</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container subscription w3-animate-right">
+        <div class="sub">
+           <div class="news">
+                <h3>Subscribe to our newsletter
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros
+                </p>
+           </div>
+           <div class="button">
+                <button class="btn bg-dark text-light mt-5 p-3">Subscribe</button>
+           </div>
+        </div>
+    </div>
+    <div class="contanier-fluid w3-animate-left" id="footer">
+        <footer>
+            <div class="container">
+                <div class="information">
+                    <div class="information-content">
+                        <div class="footer-logo">
+                            <p>Sublime</p>
+                        </div>
+                        <div class="copyright">
+                            <p>Copyright ©2023 All rights reserved</p>
+                        </div>
+                        <div class="icons">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

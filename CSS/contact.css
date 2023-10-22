@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-img {
+    background: url("https://preview.colorlib.com/theme/sublime/images/contact.jpg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.links a:nth-child(1) {
+    color: white;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    width: 100%;
+}
+
+#row {
+    display: flex;
+    align-items: center;
+}
+
+.markets > a ,.ship-return > a,.info > a {
+    text-decoration: none;
+    color: black;
+}
+
+/*map center*/
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
