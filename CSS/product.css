@@ -72,7 +72,14 @@ body {
   
   .quantity {
     display: flex;
-    gap: 50px;
+    gap: 10px;
+  }
+
+  @media screen and (max-width: 578px) {
+      .quantity {
+        width: 100%;
+        display: block;
+      }
   }
   
   .share .social {
@@ -95,5 +102,11 @@ body {
   
   .links p {
     line-height: 40px;
-  
+  }
+
+  /*added this so the links are aligned*/
+  @media screen and (max-width:600px) {
+    .links {
+      display: block;
+    }
   }
