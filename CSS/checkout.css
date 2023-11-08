@@ -26,6 +26,10 @@
     width: 100%;
 }
 
+.form-control {
+    border: 1px solid black;
+}
+
 .paypal, .cash, .credit, .direct-bank {
     display:flex;
     gap:10px;
