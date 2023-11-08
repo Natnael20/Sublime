@@ -19,6 +19,16 @@
     color: white;
 }
 
+.form-control {
+    border: 1px solid black;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
 .name {
     display: flex;
     align-items: center;
