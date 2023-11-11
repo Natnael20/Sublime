@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <!--font awesome-->
-   <script src="https://kit.fontawesome.com/cff48999ee.js" crossorigin="anonymous"></script>
-   <!--bootstrap-->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-   <!--w3-->
-   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/cff48999ee.js" crossorigin="anonymous"></script>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--w3-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Product</title>
     <link rel="stylesheet" href="/CSS/index.css">
     <link rel="stylesheet" href="/CSS/product.css">
@@ -63,36 +63,50 @@
             </div>
         </div>
     </div>
-    <div class="container w3-animate-bottom">
+    <div class="container mt-5 w3-animate-bottom">
         <div class="row">
-            <div class="col">
-                <div class="container mt-5">
-                    <img id="expandedImg" class="w-100" alt="">
-                    <div id="imgtext"></div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="column">
-                            <img src="https://preview.colorlib.com/theme/sublime/images/details_1.jpg.webp" alt="pic1"
-                                 class="w-100" onclick="myFunction(this);">
-                        </div>
-                        <div class="column">
-                            <img src="https://preview.colorlib.com/theme/sublime/images/details_2.jpg.webp" alt="pic2"
-                                 class="w-100" onclick="myFunction(this);">
-                        </div>
-                        <div class="column">
-                            <img src="https://preview.colorlib.com/theme/sublime/images/details_3.jpg.webp" alt="pic3"
-                                 class="w-100" onclick="myFunction(this);">
-                        </div>
-                        <div class="column">
-                            <img src="https://preview.colorlib.com/theme/sublime/images/details_4.jpg.webp" alt="pic4"
-                                class="w-100" onclick="myFunction(this);">
-                        </div>
-                    </div>
-                </div>
-                <script src="/script.js/tapGallery.js"></script>
+            <div class="col-lg-6">
+                <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                    class="mySwiper" thumbs-swiper=".mySwiper2" space-between="10" navigation="true">
+                    <swiper-slide>
+                        <img src="https://preview.colorlib.com/theme/sublime/images/details_1.jpg.webp"
+                            class="img-fluid" alt="pic1">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="https://preview.colorlib.com/theme/sublime/images/details_2.jpg.webp" alt="pic2"
+                            class="img-fluid">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="https://preview.colorlib.com/theme/sublime/images/details_3.jpg.webp" alt="pic3"
+                            class="img-fluid">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="https://preview.colorlib.com/theme/sublime/images/details_4.jpg.webp" alt="pic4"
+                            class="img-fluid">
+                    </swiper-slide>
+                </swiper-container>
+                <swiper-container class="mySwiper2" space-between="10" slides-per-view="4" free-mode="true"
+                watch-slides-progress="true">
+                <swiper-slide>
+                    <img src="https://preview.colorlib.com/theme/sublime/images/details_1.jpg.webp"
+                    class="img-fluid" alt="pic1">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="https://preview.colorlib.com/theme/sublime/images/details_2.jpg.webp" alt="pic2"
+                    class="img-fluid">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="https://preview.colorlib.com/theme/sublime/images/details_3.jpg.webp" alt="pic3"
+                    class="img-fluid">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="https://preview.colorlib.com/theme/sublime/images/details_4.jpg.webp" alt="pic4"
+                    class="img-fluid">
+                </swiper-slide>
+              </swiper-container>
+              <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
             </div>
-            <div class="col mt-5 ">
+            <div class="col-lg-5 ">
                 <h3>Smart Phone</h3>
                 <div class="prices">
                     <h5 class="w3-text-red">$890</h5>
@@ -103,9 +117,12 @@
                     <p>In stock</p>
                 </div>
                 <p class="mt-sm-5 mt-5 w3-opacity">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua. Phasellus id nisi quis justo tempus mollis
-                    sed et dui. In hac habitasse platea dictumst. Suspendisse ultrices mauris diam. Nullam sed aliquet
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                    ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. Phasellus id nisi quis justo tempus
+                    mollis
+                    sed et dui. In hac habitasse platea dictumst. Suspendisse ultrices mauris diam. Nullam sed
+                    aliquet
                     elit. Mauris consequat nisi ut mauris efficitur lacinia.
                 </p>
                 <div class="quantity">
@@ -128,12 +145,17 @@
     </div>
     <div class="container w3-animate-bottom mt-5">
         <div class="links">
-            <a href="#" class="active w3-text-black text-decoration-none"><h2>Description</h2></a>
+            <a href="#" class="active w3-text-black text-decoration-none">
+                <h2>Description</h2>
+            </a>
             <h2>Reviews (1)</h2>
         </div>
-        <p class="mt-5 w3-opacity">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. Phasellus id nisi quis justo tempus mollis sed et dui. In hac
-            habitasse platea dictumst. Suspendisse ultrices mauris diam. Nullam sed aliquet elit. Mauris consequat nisi
+        <p class="mt-5 w3-opacity">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. Phasellus id nisi quis justo tempus mollis sed et dui. In
+            hac
+            habitasse platea dictumst. Suspendisse ultrices mauris diam. Nullam sed aliquet elit. Mauris consequat
+            nisi
             ut mauris efficitur lacinia.
         </p>
     </div>
@@ -152,29 +174,30 @@
             </div>
             <div class="col-md-3 col-sm-6 product">
                 <img src="https://preview.colorlib.com/theme/sublime/images/product_11.jpg.webp" alt="product3"
-                class="img-fluid">
+                    class="img-fluid">
                 <h5 class="w3-hover-text-red">Play Station 5</h5>
                 <p>$500</p>
             </div>
             <div class="col-md-3 col-sm-6 product">
                 <img src="https://preview.colorlib.com/theme/sublime/images/product_6.jpg.webp" alt="product4"
-                class="img-fluid">
+                    class="img-fluid">
                 <h5 class="w3-hover-text-red">Phone</h5>
-            <p>$100</p>
+                <p>$100</p>
             </div>
         </div>
     </div>
     <div class="container subscription w3-animate-right">
         <div class="sub">
-           <div class="news">
+            <div class="news">
                 <h3>Subscribe to our newsletter
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec
+                    molestie eros
                 </p>
-           </div>
-           <div class="button">
+            </div>
+            <div class="button">
                 <button class="btn bg-dark text-light mt-5 p-3">Subscribe</button>
-           </div>
+            </div>
         </div>
     </div>
     <div class="contanier-fluid w3-animate-left" id="footer">
@@ -200,4 +223,5 @@
         </footer>
     </div>
 </body>
+
 </html>
