@@ -270,6 +270,53 @@ body {
   text-decoration: underline;
 }
 
+.product, .product2 {
+    position: relative;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+    transform: translateX(100deg);
+}
+
+.product:nth-child(1):before {
+    content: 'New';
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 35px;
+    height: 70px;
+    writing-mode: vertical-lr;
+    text-orientation:sideways;
+    line-height: 2.2;
+    text-align: center;
+    color: white;
+    background-color:rgb(108, 106, 116);
+}
+
+.product:nth-child(2)::before, .product2:nth-child(2)::before, .product2:nth-child(4)::before {
+  content: 'Sale';
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 35px;
+  height: 70px;
+  writing-mode: vertical-lr;
+  text-orientation:sideways;
+  line-height: 2.2;
+  text-align: center;
+  color: white;
+  background-color: #FF4500;
+}
+
+.product2:nth-child(2)::before {
+  background-color: #000;
+}
+
+.product2:nth-child(4)::before {
+  content: 'Hot';
+  opacity: .9;
+}
+
+
 .head {
   background: url("https://preview.colorlib.com/theme/sublime/images/avds_xl.jpg.webp");
   background-size: cover;
